@@ -1,7 +1,7 @@
 defmodule Chargifyex do
   @moduledoc """
   An HTTP client for Chargify.
-  Copied and modified from https://github.com/slogsdon/mandrill-elixir/blob/master/lib/mandrill.ex
+  Based on https://github.com/slogsdon/mandrill-elixir/blob/master/lib/mandrill.ex
   """
 
   # Let's build on top of HTTPoison
