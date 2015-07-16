@@ -1,7 +1,9 @@
 Chargifyex
 ==========
 
-API Wrapper for Chargify
+A Chargify API Wrapper for Elixir
+
+Based on https://github.com/slogsdon/mandrill-elixir
 
 Currently supports listing the most recent subscription
 
