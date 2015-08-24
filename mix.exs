@@ -1,8 +1,8 @@
-defmodule Chargifyex.Mixfile do
+defmodule Chargify.Mixfile do
   use Mix.Project
 
   def project do
-    [app: :chargifyex,
+    [app: :chargify,
      version: "0.0.1",
      elixir: "~> 1.0",
      description: description,
@@ -15,7 +15,7 @@ defmodule Chargifyex.Mixfile do
   # Type `mix help compile.app` for more information
   def application do
     [
-      mod: { Chargifyex, [] },
+      mod: { Chargify, [] },
       applications: [:httpoison, :exjsx, :logger]
     ]
   end

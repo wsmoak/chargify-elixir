@@ -1,4 +1,4 @@
-defmodule Chargifyex.Supervisor do
+defmodule Chargify.Supervisor do
   use Supervisor
 
   def start_link do

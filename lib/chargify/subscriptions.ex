@@ -1,4 +1,4 @@
-defmodule Chargifyex.Subscriptions do
+defmodule Chargify.Subscriptions do
   @moduledoc """
   Subscriptions calls for Chargify.
   """
@@ -7,7 +7,7 @@ defmodule Chargifyex.Subscriptions do
   List subscriptions in Chargify
   """
   def list do
-    Chargifyex.request("subscriptions")
+    Chargify.request("subscriptions")
   end
 
 end

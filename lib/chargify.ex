@@ -1,4 +1,4 @@
-defmodule Chargifyex do
+defmodule Chargify do
   @moduledoc """
   An HTTP client for Chargify.
   Based on https://github.com/slogsdon/mandrill-elixir/blob/master/lib/mandrill.ex
@@ -9,7 +9,7 @@ defmodule Chargifyex do
   use HTTPoison.Base
 
   def start(_type, _args) do
-    Chargifyex.Supervisor.start_link
+    Chargify.Supervisor.start_link
   end
 
   @doc """
@@ -37,7 +37,7 @@ defmodule Chargifyex do
      Needs to be a GET with no body
   """
   def request(endpoint) do
-    Chargifyex.get!(endpoint, [{:Accept, "application/json"}] )
+    Chargify.get!(endpoint, [{:Accept, "application/json"}] )
   end
 
   @doc """
@@ -45,7 +45,7 @@ defmodule Chargifyex do
   Returns binary
   """
   def key do
-    Application.get_env(:chargifyex, :key) ||
+    Application.get_env(:chargify, :key) ||
       System.get_env("CHARGIFY_API_KEY")
   end
 
@@ -54,7 +54,7 @@ defmodule Chargifyex do
   Returns binary
   """
   def subdomain do
-    Application.get_env(:chargifyex, :subdomain) ||
+    Application.get_env(:chargify, :subdomain) ||
       System.get_env("CHARGIFY_SUBDOMAIN")
   end
 

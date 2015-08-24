@@ -1,4 +1,4 @@
-defmodule ChargifyexTest do
+defmodule ChargifyTest do
   use ExUnit.Case
 
   test "the truth" do
